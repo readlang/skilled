@@ -2,6 +2,9 @@
 
 # dependencies 
 /node_modules
+
+# private config settings
 config/config.env
 
+# project notes
 notes.md
