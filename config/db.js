@@ -6,7 +6,7 @@ const connectDB = async () => {
         useUnifiedTopology: true
     })
     
-    console.log(`MonDB Connection: ${conn.connection.host}`)
+    console.log(`MongoDB Connected: ${conn.connection.host}`)
 }
 
 module.exports = connectDB;

@@ -2,7 +2,7 @@ const User = require('../models/User')
 
 const getUsers = async (req, res, next) => {
     try {
-        const result = await User.find()
+        const result = await User.find();
 
         res
         .status(200)
@@ -15,7 +15,9 @@ const getUsers = async (req, res, next) => {
 
 const createUser = async (req, res, next) => {
     try {
+        console.log(req.body)
         const result = await User.create(req.body)
+        
         res
         .status(200)
         .setHeader('Content-Type', 'application/json')
@@ -33,6 +35,4 @@ const createUser = async (req, res, next) => {
     
 // }
 
-module.exports = {
-    getUsers, createUser
-}
+module.exports = { getUsers, createUser }
