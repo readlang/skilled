@@ -25,12 +25,14 @@ const createUser = async (req, res, next) => {
     }
 }
 
-const deleteUsers = async (req, res, next) => {
+// const deleteUsers = async (req, res, next) => {
     
-}
+// }
 
-const getUser = async (req, res, next) => {
+// const getUser = async (req, res, next) => {
     
-}
+// }
 
-module.exports ////adsfasdf
+module.exports = {
+    getUsers, createUser
+}
