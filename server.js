@@ -16,7 +16,11 @@ app.use(bodyParser.json())
 const PORT = process.env.PORT || 5001;
 
 app.use(logger)
-app.use('/user', user)
+app.use('/user', user) // this is the /user route
+
+app.get('/', (req, res) => {
+    res.send('Hi, you are connected to the server! This is the root "/" route.')
+})
 
 const server = app.listen(PORT, () => {
     console.log(`Server is listening on PORT ${PORT}`)
